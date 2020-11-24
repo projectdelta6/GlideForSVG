@@ -6,7 +6,7 @@ Android Library for adding a Glide SVG module to your Android project
 
 https://jitpack.io/#projectdelta6/GlideForSVG
 
-Add it to your module/build.gradle with:
+## Add it to your module/build.gradle with:
 ```gradle
 allprojects {
     repositories {
