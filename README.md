@@ -30,9 +30,9 @@ dependencies {
 apply plugin 'kotlin-kapt'
 ```
 
-##To be able to load SVG and other(png, jpeg, etc.) in your project:
+## To be able to load SVG and other(png, jpeg, etc.) in your project:
 
-Add a 'normal' AppGlideModule in your project, eg:
+### Add a 'normal' AppGlideModule in your project, eg:
 ```import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule
 
@@ -42,7 +42,7 @@ class YourGlideModuleNameHere: AppGlideModule() {
 }
 ```
 
-And and add a GlideHelper(or whatever you'd like to call it) class like the following:
+### And and add a GlideHelper(or whatever you'd like to call it) class like this:
 ```import android.graphics.drawable.PictureDrawable
 import android.net.Uri
 import android.widget.ImageView
@@ -100,5 +100,20 @@ class GlideHelper(activity: AppCompatActivity) {
    private fun isSGV(): Boolean {
        TODO("Add your logic to determine if the recourse is an SVG or not")
    }
+}
+```
+
+### And Use in your code like this:
+
+```protected lateinit var glideHelper: GlideHelper
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    ...
+    // init your GlideHelper (or whatever you decided to name it)
+    glideHelper = GlideHelper(this)
+    ...
+    // Load an image into an ImageView:
+    glideHelper.loadUriInto(yourImageUri, yourImageView)
 }
 ```
