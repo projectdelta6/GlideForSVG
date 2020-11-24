@@ -105,7 +105,8 @@ class GlideHelper(activity: AppCompatActivity) {
 
 ### And Use in your code like this:
 
-```protected lateinit var glideHelper: GlideHelper
+```
+protected lateinit var glideHelper: GlideHelper
 
 override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
