@@ -108,7 +108,7 @@ class GlideHelper(activity: AppCompatActivity) {
 ### And Use in your code like this:
 
 ```kotlin
-protected lateinit var glideHelper: GlideHelper
+lateinit var glideHelper: GlideHelper
 
 override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
