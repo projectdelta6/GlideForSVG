@@ -1,3 +1,9 @@
+# **Deprecated**
+## This was an early attempt to get SVG to load with Glide, while it does work it does not support image tinting and probably some other things that I have not noticed yet.
+## I have since found a better library that does support tinting etc: [Glide SVG](https://github.com/qoqa/glide-svg). ([![](https://jitpack.io/v/qoqa/glide-svg.svg)](https://jitpack.io/#qoqa/glide-svg))
+## I will no longer be maintaining this library.
+---
+
 # GlideForSVG
 
 Android Library for adding a Glide SVG module to your Android project
